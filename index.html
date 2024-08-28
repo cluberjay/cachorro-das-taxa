@@ -15,7 +15,7 @@
         <header>
             
             <h1>Cachorro das taxa</h1>
-            <img class="imagens" src="img/logo4.jpg" alt="motoqueiro de delivery com cabeça de cachorro louco com os olhos vermelhos">
+            <img id="logo" src="img/logo4.jpg" alt="motoqueiro de delivery com cabeça de cachorro louco com os olhos vermelhos">
             <div class="img-desktop"></div>
             <div class="backdrop hidden"></div>
           
@@ -31,8 +31,10 @@
                     <li>
                        <details id="contatos">
                           <summary>Contatos</summary>
-                          <a href="https://wa.me/14996797612" target="_blank"><i class="bi bi-whatsapp icones-contatos"><span>(14)99679-7612</span></i></a>
-                          <a href="mailto:djjuliogoncalve@gmail.com"><i class="bi bi-envelope icones-contatos"><span>djjuliogoncalve@gmail.com</span></i></a>
+                          <div id="link-contatos">
+                            <a href="https://wa.me/14996797612" target="_blank"><i class="bi bi-whatsapp icones-contatos"></i>(14)99679-7612</a>
+                            <a href="mailto:djjuliogoncalve@gmail.com"><i class="bi bi-envelope icones-contatos"></i>djjuliogoncalve@gmail.com</a>
+                          </div>
                        </details>
                     </li>
                </ul>
@@ -153,7 +155,8 @@
         </div>
         
         <footer>
-          <ul id="lista-de-rede-sociais">
+         <!--
+           <ul id="lista-de-rede-sociais">
             <li><a href="#"><i class="bi bi-instagram"></i></a></li>
             <li><a href="#"><i class="bi bi-facebook"></i></a></li>
             <li><a href="#"><i class="bi bi-youtube"></i></a></li>
@@ -164,8 +167,24 @@
             <li>Policia</li>
             <li>SAMU</li>
             <li><a href="https://www.serasa.com.br" target="_blank">Consultar Nome</a></li>
-          </ul>
+          </ul>   
+         --> 
+          
+          <section id="explicacao-do-site">
+           
+            <div id="vantagens">
+                <img src="img/cachorro1-footer.jfif" id="cachorro1" alt="cachorro fazendo um joia com a mão direita">
+                <h2>Vantagen do cahorro das taxa</h2>
+                <p>
+                    Na profissão de motoca somos constantemente desvalorizados , saber o lucro real em
+                    cada corrida , os gastos das peças , combustível , óleo de motor , pneus e relação;
+                    Deixa agente mais esperto pra trocar uma idéia com os donos dos restaurantes para um pagamento justo das 
+                    nossas taxas ou diárias.Toque no iconde de três barrinhas lá em cima para obter dicas para os cálculos.
+                </p>
+            </div>
 
+          </section>
+          
           <ul id="lista-de-resposabilidades">
             <li><a href="privacidade.html" target="_blank">Privacidade</a></li>
             <li><a href="termos.html" target="_blank">Termos de uso</a></li>

@@ -28,7 +28,7 @@ h1 {
     color: #ffff;
 }
 
-.imagens {
+#logo {
     position: absolute;
     top: 1.5rem;
     left: 1.5rem;
@@ -40,18 +40,18 @@ h1 {
 #linkForm {
     position: relative;
     top: .5rem;
-    left: 13rem;
+    left: 11.5rem;
     color: #ddc434;
-   
-    font-size: large;
+    font-style: italic;
+    font-size:  large;
+    letter-spacing: 2px;
     text-decoration: none;
 }
 
 .troca-cor-do-linkForm {
      color: #d61111 !important;
-     font-style: italic;
-     
-     
+     font-style:normal!important;
+     font-size: medium!important;
 }
 
 #botao-menu {
@@ -97,7 +97,7 @@ li {
 }
 
 .menu-mobile li  {
-    width: fit-content;
+    font-size:   smaller;
     margin-top:  2rem;
     margin-left: 2rem;
     line-height: 4rem;
@@ -107,6 +107,10 @@ li {
     color: #000 !important;
 }
 
+.bi {
+    padding-right: .5rem;
+}
+
 
 #contatos {
    display: flex;
@@ -114,9 +118,9 @@ li {
    font-size: smaller;
 }
 
-#contatos span {
-    margin-left: .5rem;
-    font-style: normal;
+#link-contatos {
+    display: flex;
+    flex-direction: column;
 }
 
 #opcoes-de-calculo {
@@ -286,12 +290,11 @@ h2 {
 }
 
  footer {
-    margin-top: 72rem;
-    border-top-width: 2rem; 
-    border-top-style: solid;  
-    border-top-color:  #ea1d2c;
-    border-top-right-radius: 15px;
-    background-color:  #494343;
+    margin-top: 60rem;
+    border-bottom-width: 2rem;
+    border-bottom-style: solid;
+    border-bottom-color:  #ea1d2c;
+    border-bottom-right-radius: 15px;
 }
 
 #lista-de-rede-sociais {
@@ -328,7 +331,33 @@ h2 {
     border-bottom:  #c0202b .5px solid;
 }
 
+#cachorro1 {
+    position:relative;
+    top:2rem;
+    left: 17.5rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
 
+#vantagens {
+ margin-top: -1rem;   
+}
+
+#vantagens h2 {
+    margin: 0;
+    margin-left: 1rem;
+    font-weight: 900;
+    
+}
+
+#vantagens p {
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5rem;
+    
+}
 
 #lista-de-resposabilidades{
     width: 70%;
@@ -340,8 +369,7 @@ h2 {
     justify-content: space-between;
 }
 
-#lista-de-resposabilidades li a {
-    color: #eee2e2;                               
+#lista-de-resposabilidades li a {                             
     font-size: small;
     text-decoration: underline !important;
 }
