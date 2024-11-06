@@ -39,6 +39,7 @@
                     </li>
                </ul>
                
+                <div class="esconde-op-de-calculos hidden2"></div>
                 <ul id="opcoes-de-calculo">
                     <button><li id="calc-auto">Calculo Automático</li></button>
                     <button><li id="calc-manual">Calculo Manual</li></button>
@@ -74,6 +75,8 @@
                 <input type="text" id="eficiencia-do-pneu" placeholder="Quantos km dura o pneu?"  class="hidden">
                 <input type="text" id="relacao" placeholder="Quantos vc paga na relação?"  class="hidden">
                 <input type="text" id="eficiencia-da-relacao" placeholder="Quantos km dura a relação?"  class="hidden">
+                <input type="text" id="freio" placeholder="Valor das lonas/pastilha de freio?" class="hidden">
+                <input type="text" id="eficiencia-do-freio" placeholder="Quantos km dura o freio?" class="hidden">
                 <input type="text" id="taxa" placeholder="Qual o valor da taxa?"">
                 <button type="button" id="botao-calc-da-taxa">Calcular</button>
                </form>
@@ -116,6 +119,12 @@
                             <td class="celula-de-itens">Relação</td>
                             <td class="cifrao">R$:</td>
                             <td><var id="custo-de-relacao"></var></td>
+                        </tr>
+
+                        <tr>
+                            <td class="celula-de-itens">Freio</td>
+                            <td class="cifrao">R$:</td>
+                            <td><var id="custo-de-freio"></var></td>
                         </tr>
                    
                     </tbody>
@@ -171,25 +180,78 @@
          --> 
           
           <section id="explicacao-do-site">
+
+            <div id="cassino" class="centraliza-div">
+                <h2>Vantagen do cachorro das taxa</h2>
+                <div id="cachorro-cassino"></div>
+               
+                   <ul id="listas-do-footer">
+                       <li>Aqui é só vantagens !!!</li> 
+                       <li>Aqui tem sempre sorteio<i class="bi bi-check"></i></li>
+                       <li>Você descobre o lucro real em cada corrida<i class="bi bi-check"></i></li>
+                       <li>Cadastrando , já está participando do sorteio<i class="bi bi-check"></i></li>
+                       <li>Liberado muitos créditos para calcular o lucro<i class="bi bi-check"></i></li>
+                    </ul>
+            </div>
            
-            <div id="vantagens">
-                <img src="img/cachorro1-footer.jfif" id="cachorro1" alt="cachorro fazendo um joia com a mão direita">
-                <h2>Vantagen do cahorro das taxa</h2>
+            <div id="vantagens" class="centraliza-div">
+                <img src= "img/cachorro1-footer.jfif" id="cachorro1" alt="cachorro fazendo um joia com a mão direita">
+                <h2>Porque usar o site?</h2>
                 <p>
-                    Na profissão de motoca somos constantemente desvalorizados , saber o lucro real em
-                    cada corrida , os gastos das peças , combustível , óleo de motor , pneus e relação;
-                    Deixa agente mais esperto pra trocar uma idéia com os donos dos restaurantes para um pagamento justo das 
-                    nossas taxas ou diárias.Toque no iconde de três barrinhas lá em cima para obter dicas para os cálculos.
+                    Na profissão de motoca, somos constantemente desvalorizados. Saber o lucro real 
+                    em cada corrida deixa a gente mais esperto para trocar uma ideia com os donos dos 
+                    restaurantes para um pagamento justo das nossas taxas ou diárias. 
+                    Toque no ícone de três barras lá em cima para obter dicas para os cálculos.
                 </p>
             </div>
 
+            <div id="calculo" class="centraliza-div">
+               <img src="img/cachorro-calc.jfif" id="cachorro-calc" alt="calculando os custos em uma corrida">
+               <h2>Como os calculos são feitos?</h2>
+               <p>
+                  Convidamos o Professor Ricardo Soares , do curso de Matemática da Unesp , para verificar a exatidão da fórmula Matemática utilizada no site.
+                  Uma regra de três é empregada para calcular o desgaste de cada peça especificada em cálculo manual , bem como para contabilizar o consumo de combustível
+                  e óleo de motor. Visite nosso menu para entender melhor sobre os calculos.
+
+               </p>
+            </div>
+
+            <div id="regras-do-sorteio" class="centraliza-div">
+                <h2>Regras do sorteio</h2>
+                <img src="img/cachorro-sorteio.jfif" id="cachorro-sorteio" alt="cachorro com olhos vermelhos , cara de louco , participando do sorteio">
+                <ul id="listas-do-footer">
+                    <li>Ser maior de 18 anos<i class="bi bi-check"></i></li>
+                    <li>Possuir habilitação<i class="bi bi-check"></i></li>
+                    <li>Preencher corretamente o formulário<i class="bi bi-check"></i></li>
+                    <li>Aceitar os termos de uso e privacidade<i class="bi bi-check"></i></li>
+                    <li>Mil inscritos para a relaização do sorteio.<i class="bi bi-check"></i></li>
+                </ul>
+            </div>
+            
+            <div id="produto-do-sorteio" class="centraliza-div">
+                <h2>Prouto do sorteio</h2>
+                <img src="img/mochila.webp" id="mochila" alt="Imagem ilustrativa da mochila do sorteio">
+                <a href="form.html" id="link-da-div-produto-do-sorteio" class="troca-cor-do-linkForm">Cadastre-se aqui!!!</a>
+               
+                <p>
+                    Uma quantidade miníma de cadastro é exigida para o sorteio
+                    ser realizado . Dependendo do valor do produto , o numero de
+                    cadastro pode ser maior ou menor em comparação a itens já 
+                    sorteados ou que serão sorteados. Preenchimentos errados serão
+                    desconsiderados para o sorteio.
+                    Preencha corretamente o formulário e Boa Sorte !!!
+                </p>
+
+            </div>
           </section>
           
-          <ul id="lista-de-resposabilidades">
-            <li><a href="privacidade.html" target="_blank">Privacidade</a></li>
-            <li><a href="termos.html" target="_blank">Termos de uso</a></li>
-            <li><a href="cokkies.html" target="_blank">Cookies</a></li>
-          </ul>
+          <div id="container-lista-de-responsabilidades">
+              <ul id="lista-de-resposabilidades">
+                <li><a href="privacidade.html" target="_blank">Privacidade</a></li>
+                <li><a href="termos.html" target="_blank">Termos de uso</a></li>
+                <li><a href="cokkies.html" target="_blank">Cookies</a></li>
+              </ul>
+          </div>
         </footer>
 </body>
 </html>

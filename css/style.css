@@ -1,4 +1,3 @@
-
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -43,7 +42,7 @@ h1 {
     left: 11.5rem;
     color: #ddc434;
     font-style: italic;
-    font-size:  large;
+    font-size:  medium;
     letter-spacing: 2px;
     text-decoration: none;
 }
@@ -68,11 +67,6 @@ h1 , ul {
     padding: 0;
 }
 
-li {
-    margin-top: .5rem;
-    list-style: none;
-}
-
 .backdrop {
     position: absolute;
     top: 0;
@@ -85,7 +79,7 @@ li {
     position: absolute;
     top: 0;
     right: -100vw;
-    z-index: 4;
+    z-index: 5;
     width: 80%;
     height: fit-content;
     background:linear-gradient(to right, rgba(0, 0, 0, .30) -50%, rgba(0, 0, 0, 0) 100%);
@@ -101,10 +95,12 @@ li {
     margin-top:  2rem;
     margin-left: 2rem;
     line-height: 4rem;
+    list-style: none;
 }
 
 .menu-mobile li a {
     color: #000 !important;
+    text-decoration: none;
 }
 
 .bi {
@@ -123,6 +119,15 @@ li {
     flex-direction: column;
 }
 
+.esconde-op-de-calculos {
+    position: absolute;
+    top: 25.5rem;
+    z-index: 4;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+}
+
 #opcoes-de-calculo {
     position: absolute;
     top: 25rem;
@@ -131,6 +136,11 @@ li {
     z-index: 3;
     max-width: 50%;
     padding-left: 2rem;
+}
+
+#opcoes-de-calculo li {
+   list-style-type: none;
+   line-height: 2rem;
 }
 
 #opcoes-de-calculo button {
@@ -218,7 +228,7 @@ h2 {
 
  table caption {
    font-size: 1.5rem;
-    color: #ea1d2c;
+   color: #ea1d2c;
  }
 
  table #cabecalho-da-tabela {
@@ -253,9 +263,7 @@ h2 {
     height:10rem;
  }
 
- 
-
- table #celula-do-total {
+table #celula-do-total {
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
@@ -290,58 +298,137 @@ h2 {
 }
 
  footer {
-    margin-top: 60rem;
+    margin-top: 61rem;
     border-bottom-width: 2rem;
     border-bottom-style: solid;
     border-bottom-color:  #ea1d2c;
     border-bottom-right-radius: 15px;
 }
 
-#lista-de-rede-sociais {
-    display: inline-flex;
-    justify-content: space-around;
-    width: 50vw;
-    margin-top: 3.5rem;
-    margin-left:25vw;
+#cassino {
+    width: 100%;
+    margin-bottom: 6rem;
 }
 
-#lista-de-rede-sociais .bi-instagram{
-    color:#F58529;
-  }
-
-#lista-de-rede-sociais .bi-facebook{
-    color:#17A9FD;
-  }
-
-
-#lista-de-rede-sociais .bi-youtube{
-  color: #ea1d2c;
+#cachorro-cassino {
+    width: 265px; 
+    max-width: 500px;                                                                                                                  
+    height: 165px;
+    border: #ea1d2c 3px solid;
+    margin: auto;
+    background-image: url('../img/cachorro-cassino.jfif');
+    background-size: 265px 165px;
 }
 
-#Titulo-da-lista-de-utilidades {
-  color: #c0202b;
-  font-weight: lighter;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+#listas-do-footer {
+    margin-top: 2rem;
+    margin-left:2.5rem;
+    margin-bottom: 6rem; 
 }
 
-#lista-de-utilidades {
-    width: 40%;
-    margin-top: 3.5rem;
-    margin-left: 3rem;
-    border-bottom:  #c0202b .5px solid;
+.centraliza-div {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+}
+
+#regras-do-sorteio #listas-do-footer {
+    margin-top: -6rem;
+}
+
+ #listas-do-footer li {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 550;
+    line-height: 4rem;
+}
+
+.bi-check {
+    font-size: 1.5rem;
+    color: green;
 }
 
 #cachorro1 {
     position:relative;
     top:2rem;
-    left: 17.5rem;
+    left: 14.5rem;
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
 }
 
+#cachorro-calc {
+    position: relative;
+    top: 8.5rem;
+    left: 1rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin-bottom: 6rem;
+}
+
+#cachorro-sorteio {
+    position: relative;
+    top: 3.5rem;
+    left:13rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+#produto-do-sorteio {
+    margin-bottom: 6rem;
+}
+
+#mochila {
+    position: relative;
+    left: 1rem;
+    width: 8rem;
+    height: 8rem;
+}
+
 #vantagens {
  margin-top: -1rem;   
+}
+
+#vantagens p {
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+#calculo p {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+#produto-do-sorteio p {
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+#link-da-div-produto-do-sorteio {
+    position: relative;
+    top: -4rem;
+    left: 4rem;
+    color: #ddc434;
+    font-style: italic;
+    font-size:  medium;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+#cassino h2 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-weight: 900;
 }
 
 #vantagens h2 {
@@ -351,30 +438,49 @@ h2 {
     
 }
 
-#vantagens p {
-    margin-left: 1rem;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.5rem;
-    
+#calculo h2 {
+   margin: 0;
+   margin-top: -1rem;
+   margin-left: 9rem;
+   font-weight: 900;
 }
 
-#lista-de-resposabilidades{
-    width: 70%;
-    margin: auto;
-    margin-top: 3.5rem;
-    margin-bottom: 1rem;
-    margin-left: 15%;
+#regras-do-sorteio h2 {
+    margin: 0;
+    margin-top: 10rem;
+    text-align:center ;
+    font-weight: 900;
+}
+
+#container-lista-de-responsabilidades {
+    height: 150px;
+    background-color: #6d6868;
+}
+
+#lista-de-resposabilidades {
+    width: 90%;
+    margin-top: 7rem;
+    margin-left: 1rem;
+    
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+#lista-de-resposabilidades li {
+    list-style: none;
 }
 
 #lista-de-resposabilidades li a {                             
     font-size: small;
     text-decoration: underline !important;
+    color: #fff;
 }
 
 .hidden {
+    display: none;
+}
+
+.hidden2 {
     display: none;
 }
 
