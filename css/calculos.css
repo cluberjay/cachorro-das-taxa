@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    margin: 0;
+    border-top-width: 2rem;
+    border-top-style: solid;
+    border-top-color:  #ea1d2c;
+    width: 100%;
+    height: fit-content;
+   }
+
+
+main {
+    
+    width: 80%;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+h1 {
+    font-size: medium;
+    color: #ea1d2c;
+}
+
+h2 {
+    font-size: medium;
+}
+
+nav > a {
+    position: relative;
+    top: -1.5rem;
+    left: 3.5rem;
+    color: #000;
+    font-size: large;
+}
+
+.paragrafos-res-calculos > a {
+    font-size: 1rem;
+    text-decoration: underline;
+    color: #ea1d2c;
+}
+
+cite > a {
+    color: #000;
+}
+
+#tabela-resumo-dos-calculos {
+    width:50%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 2rem;
+    border-collapse: collapse;
+}
+
+#tabela-resumo-dos-calculos  caption {
+   margin-bottom: .5rem;
+}
+
+#tabela-resumo-dos-calculos th {
+    border-top: 1px solid #000;
+    border-right:1px solid #000;
+    border-left: 1px solid #000;
+    background-color: #ada1a1;
+}
+
+#tabela-resumo-dos-calculos td {
+    padding: 1rem;
+    border-top: 1px solid #000;
+    border-right:1px solid #000;
+    border-left: 1px solid #000;
+    background-color: #ddd4d4;
+}
+
+#tabela-resumo-dos-calculos td cite {
+    font-size: smaller;
+}
+
+#tabela-resumo-dos-calculos td a {
+   text-decoration: underline;
+   color: #008542;
+}
+
+#tabela-resumo-dos-calculos .td-pneu {
+  border-bottom: 1px solid #000;
+}
+
+#rodape-da-tabela td {
+  font-style: oblique;
+  border-bottom: 1px solid #000; 
+}
+
+footer {
+    margin-top: 15rem;
+    border-top-width: 2rem; 
+    border-top-style: solid;  
+    border-top-color:  #ea1d2c;
+    background-color:  #494343;
+}
+
+#lista-de-rede-sociais {
+    list-style-type: none;
+    width: 50%;
+    margin-top: 3.5rem;
+    margin-left:25%;
+    margin-right: 25%;
+    padding-left: 0;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+#lista-de-rede-sociais .bi-instagram{
+    color:#F58529;
+  }
+
+#lista-de-rede-sociais .bi-facebook{
+    color:#17A9FD;
+  }
+
+
+#lista-de-rede-sociais .bi-youtube{
+  color: #ea1d2c;
+}
+
+#Titulo-da-lista-de-utilidades {
+  color: #c0202b;
+  font-weight: lighter;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#lista-de-utilidades {
+    width: 40%;
+    margin-top: 3.5rem;
+    margin-left: 3rem;
+    border-bottom:  #c0202b .5px solid;
+}
+
+#lista-de-utilidades li,a {
+    margin-bottom: .3rem;
+    color: #eee2e2;
+    text-decoration: none;
+    font-size: small;
+}
+
+#lista-de-resposabilidades {
+    list-style-type: none;
+    width: 70%;
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-left: 0;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#lista-de-resposabilidades a {
+    color: #eee2e2;
+    font-size: small;
+    text-decoration: underline !important;
+}

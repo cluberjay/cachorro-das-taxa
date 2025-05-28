@@ -1,0 +1,601 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+ margin: 0;
+ border-top-width: 2rem;
+ border-top-style: solid;
+ border-top-color:  #ea1d2c;
+ border-top-left-radius: 15px;
+ width: 100vw;
+ height: fit-content;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    position: absolute;
+    top: -1.5rem;
+    left: 1rem;
+    font-size : 1rem;
+    font-style: italic;
+    color: #ffff;
+}
+
+#logo {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+#linkForm {
+    position: relative;
+    top: .5rem;
+    left: 11.5rem;
+    color: #ddc434;
+    font-style: italic;
+    font-size:  medium;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.troca-cor-do-linkForm {
+     color: #d61111 !important;
+     font-style:normal!important;
+     font-size: medium!important;
+}
+
+#botao-menu {
+    position: absolute;
+    top: 2.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background:none;
+}
+
+h1 , ul {
+    margin: 0;
+    padding: 0;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 1520px;
+}
+
+.menu-mobile {
+    position: absolute;
+    top: 0;
+    right: -100vw;
+    z-index: 5;
+    width: 80%;
+    height: fit-content;
+    background:linear-gradient(to right, rgba(0, 0, 0, .30) -50%, rgba(0, 0, 0, 0) 100%);
+    transition: right .2s linear;   
+}
+
+.menu-mobile.open {
+    right: 0;
+}
+
+.menu-mobile li  {
+    font-size:   smaller;
+    margin-top:  2rem;
+    margin-left: 2rem;
+    line-height: 4rem;
+    list-style: none;
+}
+
+.menu-mobile li a {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.bi {
+    padding-right: .5rem;
+}
+
+
+#contatos {
+   display: flex;
+   flex-direction: column;
+   font-size: smaller;
+}
+
+#link-contatos {
+    display: flex;
+    flex-direction: column;
+}
+
+.esconde-op-de-calculos {
+    position: absolute;
+    top: 25.5rem;
+    z-index: 4;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+}
+
+#opcoes-de-calculo {
+    position: absolute;
+    top: 25rem;
+    right: 25%;
+    left: 25%;
+    z-index: 3;
+    max-width: 50%;
+    padding-left: 2rem;
+}
+
+#opcoes-de-calculo li {
+   list-style-type: none;
+   line-height: 2rem;
+}
+
+#opcoes-de-calculo button {
+    border: none;
+    background: none;
+}
+
+#container-principal {
+    position: absolute;
+    z-index: 2;
+    top:80%;
+    max-width:60%;
+    width:100%;
+    right: 20%;
+    left: 20%;
+}
+
+#botao-de-fechar-calculos {
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    border: none;
+    font-size: x-large;
+    font-weight: bold;
+    background: none;
+    color:#ea1d2c;
+}
+
+#botao-recalcular {
+    width: 70%;
+    margin-top: 2rem;
+    margin-right:15%;
+    margin-left:15%;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius:  3rem;
+    border-color: transparent ;
+    color: #ffff;
+    background: #c0202b ;
+}
+
+#tipo-de-motos {
+    margin-bottom: 25px;
+}
+
+#calculos {
+    display:flex;
+    flex-direction: column;
+}
+
+ [type = "text"] {
+    margin-bottom: .5rem;
+    border-bottom-width: 0.10rem;                                                                                                                                                                                                                                                                                                  
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color:#000;
+    border-left-color: transparent;
+}
+
+#botao-calc-da-taxa {
+    width: 70%;
+    margin-top: 1rem;
+    margin-right:15%;
+    margin-left:15%;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius:  3rem;
+    border-color: transparent ;
+    color: #ffff;
+    background: #0275d8 ; 
+}
+
+.container-dos-custos {
+   position: absolute;
+   max-width: 100%;
+   height: 20vh;
+   margin:auto;
+}
+
+h2 {
+    font-size: 1rem;
+ }
+
+ table caption {
+   font-size: 1.5rem;
+   color: #ea1d2c;
+ }
+
+ table #cabecalho-da-tabela {
+    height: 3.5rem;
+}
+
+ table #linha-de-cabecalho {
+    margin-left: -3rem;
+ }
+
+ table #cabecalho-de-custos {
+    padding-left: 5rem;
+ }
+
+ table .celula-de-itens {
+    color: #F58529;
+ }
+
+ table #celula-de-lucro {
+    text-align:center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color : green;
+}
+
+ table .cifrao {
+    width: fit-content;
+    padding-left: 5rem;
+ }
+
+#rodape-dos-custos {
+    height:10rem;
+ }
+
+table #celula-do-total {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color:#ea1d2c;
+ }
+
+ table #celula-do-total-cifrao {
+    text-align: center;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ table #total-dos-custos {
+    padding-left: 2rem ;
+ }
+
+ table #valor-da-taxa {
+    padding-left: 2rem;
+ }
+
+ var {
+    margin-left: -1.5rem;
+}
+
+#sessao-de-comentarios {
+    margin-top: 30rem;
+}
+
+#comentarios {
+  border: none;
+  outline: none;
+}
+
+ footer {
+    margin-top: 61rem;
+    border-bottom-width: 2rem;
+    border-bottom-style: solid;
+    border-bottom-color:  #ea1d2c;
+    border-bottom-right-radius: 15px;
+}
+
+#cassino {
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+#cachorro-cassino {
+    width: 265px; 
+    max-width: 500px;                                                                                                                  
+    height: 165px;
+    border: #ea1d2c 3px solid;
+    margin: auto;
+    background-image: url('../img/cachorro-cassino.jfif');
+    background-size: 265px 165px;
+}
+
+#listas-do-footer {
+    margin-top: 2rem;
+    margin-left:2.5rem;
+    margin-bottom: 6rem; 
+}
+
+.centraliza-div {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+}
+
+#regras-do-sorteio #listas-do-footer {
+    margin-top: -6rem;
+}
+
+ #listas-do-footer li {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 550;
+    line-height: 4rem;
+}
+
+.bi-check {
+    font-size: 1.5rem;
+    color: green;
+}
+
+#cachorro1 {
+    position:relative;
+    top:2rem;
+    left: 14.5rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+#cachorro-calc {
+    position: relative;
+    top: 8.5rem;
+    left: 1rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin-bottom: 6rem;
+}
+
+#cachorro-sorteio {
+    position: relative;
+    top: 3.5rem;
+    left:13rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+#produto-do-sorteio {
+    margin-bottom: 6rem;
+}
+
+#mochila {
+    position: relative;
+    left: 1rem;
+    width: 8rem;
+    height: 8rem;
+}
+
+#vantagens {
+ margin-top: -1rem;   
+}
+
+#vantagens p {
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+#calculo p {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+#produto-do-sorteio p {
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+#link-da-div-produto-do-sorteio {
+    position: relative;
+    top: -4rem;
+    left: 4rem;
+    color: #ddc434;
+    font-style: italic;
+    font-size:  medium;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+#cassino h2 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+
+#vantagens h2 {
+    margin: 0;
+    margin-left: 1rem;
+    font-weight: 900;
+    
+}
+
+#calculo h2 {
+   margin: 0;
+   margin-top: -1rem;
+   margin-left: 9rem;
+   font-weight: 900;
+}
+
+#regras-do-sorteio h2 {
+    margin: 0;
+    margin-top: 10rem;
+    text-align:center ;
+    font-weight: 900;
+}
+
+#container-lista-de-responsabilidades {
+    height: 150px;
+    background-color: #6d6868;
+}
+
+#lista-de-resposabilidades {
+    width: 90%;
+    margin-top: 7rem;
+    margin-left: 1rem;
+    
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+#lista-de-resposabilidades li {
+    list-style: none;
+}
+
+#lista-de-resposabilidades li a {                             
+    font-size: small;
+    text-decoration: underline !important;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden2 {
+    display: none;
+}
+
+@media (min-width: 992px){
+
+    body {
+
+          width: 100%;
+
+    }
+    
+    h1 {
+        top: -2rem;
+        left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .imagens {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        
+    }
+    
+    #botao-menu {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: inline-flex;
+        justify-content: space-around;
+        top: -4rem;
+        right: 0;
+        background: none;
+    }
+
+    summary {
+        font-size: 1rem;
+    }
+
+   span {
+        font-size: 1rem;
+    }
+
+    .menu-mobile li,a {
+        color:#000;
+        font-size: small;
+        
+    }
+
+    details {
+        margin-top: -4px;
+    }
+
+    #opcoes-de-calculo {
+        position:absolute;
+        z-index: 5;
+        display: inline-flex;
+        justify-content: space-around;
+        margin-top: -2rem;
+        margin-left: -2rem;
+        padding-left: 0;
+    }
+
+    #opcoes-de-calculo button {
+        font-size: large;
+        letter-spacing: .25rem;
+    }
+
+    #opcoes-de-calculo button:hover {
+        color:#ea1d2c;
+        cursor: pointer;
+    }
+
+    #sessao-calculos {
+        max-width: 500px;
+        margin:auto;
+        margin-top: 1.5rem;
+    }
+
+    #calculos input {
+        border: solid 1.5px #000;
+        border-radius: 20px;
+        margin-bottom: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .container-dos-custos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 800px;
+        width: 100%;
+        height: 40%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    footer {
+        margin-top: 70rem;
+    }
+
+    .bi {
+        font-size: 1.5rem;
+    }
+
+    .hidden {
+        display:none !important ; 
+    }
+}

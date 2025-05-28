@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    border-top: 2rem solid #ea1d2c;
+}
+
+nav > a {
+    position: relative;
+    top: -1.5rem;
+    left: 3.5rem;
+    font-size: large;
+    color: #000;
+    text-decoration: none;
+}
+
+h1 {
+    margin-top: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: gray;
+    text-align: center;
+    font-size: large;
+    letter-spacing: 1px;
+    font-family: -apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Helvetica,Ubuntu,Roboto,Noto,Segoe UI,Arial,sans-serif;
+}
+
+#form {
+    width: 60%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputs-form-sorteio , #genero {
+    margin-bottom: 1rem;
+    border-bottom-width: 0.10rem;                                                                                                                                                                                                                                                                                                  
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color:#000;
+    border-left-color: transparent;
+}
+
+#genero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-radio {
+    width: fit-content;
+    color: #848484;
+    margin-bottom: .5rem;
+}
+
+#botao-form-sorteio {
+    width: 70%;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 1rem;
+    background-color: #4CAF50;
+    color: #fff;
+    letter-spacing: 3px;
+    border-radius: 50px;
+    border-color: transparent;
+}

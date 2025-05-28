@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="js/script.js" defer></script>
+    <title>Cachorro das Taxa</title>
+</head>
+
+<body>
+   
+        <header>
+            
+            <h1>Cachorro das taxa</h1>
+            <img id="logo" src="img/logo4.jpg" alt="motoqueiro de delivery com cabeça de cachorro louco com os olhos vermelhos">
+            <div class="img-desktop"></div>
+            <div class="backdrop hidden"></div>
+          
+            <nav>
+               
+               <a href="form.html" id="linkForm" class="troca-cor-do-linkForm">Concorra a uma Bag !!!</a>
+               <button type="button" id="botao-menu"><i class="bi bi-list" ></i></button>
+               <ul class="menu-mobile">
+                    <li><a href="rdos-calculos.html" target="_self">Dicas para os cálculos</a></li>
+                    <li><a href="protecao-no-transito.html" target="_self">Proteção no trânsito</a></li>
+                    <li><a href="tutorial.html" target="_self">Tutorial GPS</a></li>
+                    <li><a href="sobre.html" target="_self">Sobre nós</a></li>
+                    <li>
+                       <details id="contatos">
+                          <summary>Contatos</summary>
+                          <div id="link-contatos">
+                            <a href="https://wa.me/14996797612" target="_blank"><i class="bi bi-whatsapp icones-contatos"></i>(14)99679-7612</a>
+                            <a href="mailto:djjuliogoncalve@gmail.com"><i class="bi bi-envelope icones-contatos"></i>djjuliogoncalve@gmail.com</a>
+                          </div>
+                       </details>
+                    </li>
+               </ul>
+               
+                <div class="esconde-op-de-calculos hidden2"></div>
+                <ul id="opcoes-de-calculo">
+                    <button><li id="calc-auto">Calculo Automático</li></button>
+                    <button><li id="calc-manual">Calculo Manual</li></button>
+               </ul>
+           
+            </nav>
+        
+        </header>
+        
+        <div id="auxiliar">
+         
+          <main id="container-principal" class="hidden">
+            
+            <button type="button" id="botao-de-fechar-calculos" form="calculos"><i class="bi bi-x"></i></button>
+            
+            <select name="motos" id="tipo-de-motos" form="calculos" class="hidden">
+                <option label="Qual sua moto?"></option>
+                <option value="honda-160/150">CG160 ou CG150</option>
+                <option value="bross150/crosser-150">BROSS150 ou CROSSER150</option>
+                <option value="cb-300/xre-300">XRE300 ou CB300</option>
+                <option value="fazer150/xre-190">XRE 190 ou FAZER150</option>
+                <option value="factor-150">FACTOR150</option>
+            </select>
+        
+            <section id="sessao-calculos">
+               <form id="calculos">
+                <input type="text" id="distancia-da-corrida" placeholder="Quantos km da a corrida?">
+                <input type="text" id="eficiencia-do-combustivel" placeholder="Quantos sua moto faz por litro?" class="hidden">
+                <input type="text" id="combustivel" placeholder="Preço do combustivel?"  class="hidden">
+                <input type="text" id="oleo" placeholder="Preço do oleo de motor?"  class="hidden">
+                <input type="text" id="eficiencia-do-oleo" placeholder="Quantos km dura o óleo?"  class="hidden">
+                <input type="text" id="pneu" placeholder="Quantos vc paga nos dois Pneu?"  class="hidden">
+                <input type="text" id="eficiencia-do-pneu" placeholder="Quantos km dura o pneu?"  class="hidden">
+                <input type="text" id="relacao" placeholder="Quantos vc paga na relação?"  class="hidden">
+                <input type="text" id="eficiencia-da-relacao" placeholder="Quantos km dura a relação?"  class="hidden">
+                <input type="text" id="freio" placeholder="Valor das lonas/pastilha de freio?" class="hidden">
+                <input type="text" id="eficiencia-do-freio" placeholder="Quantos km dura o freio?" class="hidden">
+                <input type="text" id="taxa" placeholder="Qual o valor da taxa?"">
+                <button type="button" id="botao-calc-da-taxa">Calcular</button>
+               </form>
+            </section>
+             
+            <div class="container-dos-custos hidden">
+               
+                <table>
+                    
+                    <caption>Custos da corrida</caption>
+                   
+                    <thead id="cabecalho-da-tabela">
+                        <tr id="linha-de-cabecalho">
+                            <th id="cabecalho-de-itens">Itens</th>
+                            <th id="cabecalho-de-custos">Gastos</th>
+                        </tr>
+                    </thead>
+                   
+                    <tbody>
+                       
+                        <tr>
+                          <td class="celula-de-itens">Gas</td>
+                          <td class="cifrao">R$:</td>
+                          <td><var id="custo-de-combustivel"></var></td>
+                        </tr>
+                       
+                        <tr>
+                            <td class="celula-de-itens">Óleo</td>
+                            <td class="cifrao">R$:</td>
+                            <td><var id="custo-de-oleo"></var></td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="celula-de-itens">Pneu</td>
+                            <td class="cifrao">R$:</td>
+                            <td><var id="custo-de-pneu"></var></td>
+                        </tr>
+                       
+                        <tr>
+                            <td class="celula-de-itens">Relação</td>
+                            <td class="cifrao">R$:</td>
+                            <td><var id="custo-de-relacao"></var></td>
+                        </tr>
+
+                        <tr>
+                            <td class="celula-de-itens">Freio</td>
+                            <td class="cifrao">R$:</td>
+                            <td><var id="custo-de-freio"></var></td>
+                        </tr>
+                   
+                    </tbody>
+                   
+                    <tfoot id="rodape-dos-custos">
+                       
+                        <tr id="linha-do-total">
+                            <td id="celula-do-total" colspan="2">Total</td>
+                        </tr>
+                       
+                        <tr>
+                            <td id="celula-do-total-cifrao" colspan="2"><span>R$:</span><var id="total-dos-custos"></var></td>
+                        </tr>
+                       
+                        <tr>
+                            <td id="celula-de-lucro" colspan="2">Lucro</td>
+                        </tr>
+                        
+                        <tr>
+                            <td id="celula-do-total-cifrao" colspan="2"><span>R$:</span><var id="valor-da-taxa"></var></td>
+                        </tr>
+                   
+                    </tfoot>
+                
+                </table>
+               
+                <button type="button" form="calculos" id ="botao-recalcular">Recalcular</button>
+           
+            </div>
+             
+             <section id="sessao-de-comentarios" class="hidden">
+                <p>Comentários</p>
+                <hr>
+                <textarea name="caixa-de-comentarios" id="comentarios" cols="25" rows="5" form="calculos" placeholder="Deixe seu comentário :"></textarea>
+            </section>
+         </main>
+        </div>
+        
+        <footer>
+         <!--
+           <ul id="lista-de-rede-sociais">
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+          </ul>
+
+          <ul id="lista-de-utilidades">
+            <h3 id="Titulo-da-lista-de-utilidades">Utilidades:</h3>
+            <li>Policia</li>
+            <li>SAMU</li>
+            <li><a href="https://www.serasa.com.br" target="_blank">Consultar Nome</a></li>
+          </ul>   
+         --> 
+          
+          <section id="explicacao-do-site">
+
+            <div id="cassino" class="centraliza-div">
+                <h2>Vantagen do cachorro das taxa</h2>
+                <div id="cachorro-cassino"></div>
+               
+                   <ul id="listas-do-footer">
+                       <li>Aqui é só vantagens !!!</li> 
+                       <li>Aqui tem sempre sorteio<i class="bi bi-check"></i></li>
+                       <li>Você descobre o lucro real em cada corrida<i class="bi bi-check"></i></li>
+                       <li>Cadastrando , já está participando do sorteio<i class="bi bi-check"></i></li>
+                       <li>Liberado muitos créditos para calcular o lucro<i class="bi bi-check"></i></li>
+                    </ul>
+            </div>
+           
+            <div id="vantagens" class="centraliza-div">
+                <img src= "img/cachorro1-footer.jfif" id="cachorro1" alt="cachorro fazendo um joia com a mão direita">
+                <h2>Porque usar o site?</h2>
+                <p>
+                    Na profissão de motoca, somos constantemente desvalorizados. Saber o lucro real 
+                    em cada corrida deixa a gente mais esperto para trocar uma ideia com os donos dos 
+                    restaurantes para um pagamento justo das nossas taxas ou diárias. 
+                    Toque no ícone de três barras lá em cima para obter dicas para os cálculos.
+                </p>
+            </div>
+
+            <div id="calculo" class="centraliza-div">
+               <img src="img/cachorro-calc.jfif" id="cachorro-calc" alt="calculando os custos em uma corrida">
+               <h2>Como os calculos são feitos?</h2>
+               <p>
+                  Convidamos o Professor Ricardo Soares , do curso de Matemática da Unesp , para verificar a exatidão da fórmula Matemática utilizada no site.
+                  Uma regra de três é empregada para calcular o desgaste de cada peça especificada em cálculo manual , bem como para contabilizar o consumo de combustível
+                  e óleo de motor. Visite nosso menu para entender melhor sobre os calculos.
+
+               </p>
+            </div>
+
+            <div id="regras-do-sorteio" class="centraliza-div">
+                <h2>Regras do sorteio</h2>
+                <img src="img/cachorro-sorteio.jfif" id="cachorro-sorteio" alt="cachorro com olhos vermelhos , cara de louco , participando do sorteio">
+                <ul id="listas-do-footer">
+                    <li>Ser maior de 18 anos<i class="bi bi-check"></i></li>
+                    <li>Possuir habilitação<i class="bi bi-check"></i></li>
+                    <li>Preencher corretamente o formulário<i class="bi bi-check"></i></li>
+                    <li>Aceitar os termos de uso e privacidade<i class="bi bi-check"></i></li>
+                    <li>Mil inscritos para a relaização do sorteio.<i class="bi bi-check"></i></li>
+                </ul>
+            </div>
+            
+            <div id="produto-do-sorteio" class="centraliza-div">
+                <h2>Prouto do sorteio</h2>
+                <img src="img/mochila.webp" id="mochila" alt="Imagem ilustrativa da mochila do sorteio">
+                <a href="form.html" id="link-da-div-produto-do-sorteio" class="troca-cor-do-linkForm">Cadastre-se aqui!!!</a>
+               
+                <p>
+                    Uma quantidade miníma de cadastro é exigida para o sorteio
+                    ser realizado . Dependendo do valor do produto , o numero de
+                    cadastro pode ser maior ou menor em comparação a itens já 
+                    sorteados ou que serão sorteados. Preenchimentos errados serão
+                    desconsiderados para o sorteio.
+                    Preencha corretamente o formulário e Boa Sorte !!!
+                </p>
+
+            </div>
+          </section>
+          
+          <div id="container-lista-de-responsabilidades">
+              <ul id="lista-de-resposabilidades">
+                <li><a href="privacidade.html" target="_blank">Privacidade</a></li>
+                <li><a href="termos.html" target="_blank">Termos de uso</a></li>
+                <li><a href="cokkies.html" target="_blank">Cookies</a></li>
+              </ul>
+          </div>
+        </footer>
+</body>
+</html>
