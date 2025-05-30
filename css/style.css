@@ -76,6 +76,7 @@ h1 , ul {
 }
 
 .menu-mobile {
+    display: none;
     position: absolute;
     top: 0;
     right: -100vw;
