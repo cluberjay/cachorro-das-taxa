@@ -134,6 +134,7 @@ calcAuto.addEventListener('click', () =>{
    tipoDeMotos.classList.remove('hidden')
    //opcoesDeCalculo.classList.add('hidden')
    esconeOpDeCalc.classList.remove('hidden2')
+   distanciaDaCorrida.focus()
 
 })
 
@@ -156,6 +157,7 @@ calcAuto.addEventListener('click', () =>{
     containerPrincipal.classList.remove('hidden')
     tipoDeMotos.classList.add('hidden')
     esconeOpDeCalc.classList.remove('hidden2')
+    distanciaDaCorrida.focus()
 
     for (let i = 1 ; i <= 10 ; i++){
         let input = document.querySelector('#calculos .hidden')
@@ -229,6 +231,7 @@ botaoDeRecalcular.addEventListener('click' , ()=>{
     sessaoDeCalculos.classList.remove('hidden')
     tipoDeMotos.classList.remove('hidden')
     botaoDeFecharCalculos.classList.remove('hidden')
+    distanciaDaCorrida.focus()
     
     if(calculoAutomatico === false){
         tipoDeMotos.classList.add('hidden')
