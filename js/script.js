@@ -30,6 +30,7 @@ let MediaDoCombustivel = 5.74
 let MediaDoOleo = 35
 let totalDosCustos
 let calculoAutomatico
+let entradas_Do_Form_Dos_Custos
 const botaoDeRecalcular = document.querySelector('#botao-recalcular')
 const botaoDeFecharCalculos = document.querySelector('#botao-de-fechar-calculos')
 
@@ -229,12 +230,19 @@ botaoDeRecalcular.addEventListener('click' , ()=>{
     
     contDosCustos.classList.add('hidden')
     sessaoDeCalculos.classList.remove('hidden')
-    tipoDeMotos.classList.remove('hidden')
     botaoDeFecharCalculos.classList.remove('hidden')
     distanciaDaCorrida.focus()
     
     if(calculoAutomatico === false){
         tipoDeMotos.classList.add('hidden')
+    } else {
+         tipoDeMotos.classList.remove('hidden')
+    }
+
+    entradas_Do_Form_Dos_Custos = document.querySelectorAll('form input')
+
+    for(i=0 ; i<=11 ; i++){
+        entradas_Do_Form_Dos_Custos[i].value = ''
     }
 })
 
