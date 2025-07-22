@@ -307,6 +307,10 @@ table #celula-do-total {
     border-bottom-right-radius: 15px;
 }
 
+#explicacao-do-site {
+    width: 100%;
+}
+
 #cassino {
     width: 100%;
     margin-bottom: 6rem;
