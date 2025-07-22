@@ -316,6 +316,10 @@ table #celula-do-total {
     margin-bottom: 6rem;
 }
 
+#vantagens , #calculo , #regras-do-sorteio , #produto-do-sorteio  {
+    width: 100%;
+}
+
 #cachorro-cassino {
     width: 265px; 
     max-width: 500px;                                                                                                                  
