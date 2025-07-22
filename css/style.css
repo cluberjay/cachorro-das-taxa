@@ -360,7 +360,7 @@ table #celula-do-total {
 
 #cachorro1 {
     position:relative;
-    top:2rem;
+    top:1.5rem;
     left: 10rem;
     width: 8rem;
     height: 8rem;
@@ -402,6 +402,7 @@ table #celula-do-total {
 }
 
 #vantagens p {
+    margin-top: 0,5rem;
     margin-left: 1rem;
     font-size: 12px;
     font-weight: 500;
