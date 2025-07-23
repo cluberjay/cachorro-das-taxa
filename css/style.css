@@ -57,8 +57,8 @@ h1 {
 
 #botao-menu {
     position: absolute;
-    top: 2.5rem;
-    right: 1.5rem;
+    top: 1rem;
+    right: 1rem;
     font-size: 1.5rem;
     border: none;
     background:none;
@@ -134,11 +134,10 @@ h1 , ul {
 
 #opcoes-de-calculo {
     position: absolute;
-    top: 25rem;
-    right: 25%;
-    left: 25%;
+    top: 15rem;
     z-index: 3;
     max-width: 50%;
+    margin: auto;
     padding-left: 2rem;
 }
 
@@ -362,8 +361,8 @@ table #celula-do-total {
 
 #cachorro1 {
     position:relative;
-    top:1.5rem;
-    left: 10rem;
+    top:1rem;
+    left: 15rem;
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
@@ -371,7 +370,7 @@ table #celula-do-total {
 
 #cachorro-calc {
     position: relative;
-    top: 8.5rem;
+    top: 1.5rem;
     left: 1rem;
     width: 8rem;
     height: 8rem;
@@ -382,7 +381,7 @@ table #celula-do-total {
 #cachorro-sorteio {
     position: relative;
     top: 3.5rem;
-    left:12.5rem;
+    left:15rem;
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
@@ -390,6 +389,10 @@ table #celula-do-total {
 
 #produto-do-sorteio {
     margin-bottom: 6rem;
+}
+
+#produto-do-sorteio h2 {
+    left: 1rem;
 }
 
 #mochila {
@@ -400,7 +403,11 @@ table #celula-do-total {
 }
 
 #vantagens {
- margin-top: -1rem;   
+    margin-top: -1rem;   
+}
+
+#vantagens h2 {
+    margin-top: -2rem;    
 }
 
 #vantagens p {
