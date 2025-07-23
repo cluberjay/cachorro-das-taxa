@@ -7,7 +7,7 @@
 
 body {
  margin: 0;
- border-top-width: 2rem;
+ border-top-width: 3rem;
  border-top-style: solid;
  border-top-color:  #ea1d2c;
  border-top-left-radius: 15px;
@@ -24,7 +24,7 @@ h1 {
     position: absolute;
     top: -1.5rem;
     left: 1rem;
-    font-size : 1rem;
+    font-size : 2rem;
     font-style: italic;
     color: #ffff;
 }
@@ -40,8 +40,8 @@ h1 {
 
 #linkForm {
     position: relative;
-    top: .5rem;
-    left: 6rem;
+    top: 1rem;
+    left: 7.5rem;
     color: #ddc434;
     font-style: italic;
     font-size:  medium;
@@ -145,6 +145,7 @@ h1 , ul {
 }
 
 #opcoes-de-calculo li {
+   font-size: xx-large;
    list-style-type: none;
    line-height: 2rem;
 }
@@ -373,7 +374,7 @@ table #celula-do-total {
 
 #cachorro-calc {
     position: relative;
-    top: 3.5rem;
+    top: 4rem;
     left: 1rem;
     width: 8rem;
     height: 8rem;
@@ -435,7 +436,7 @@ table #celula-do-total {
 #link-da-div-produto-do-sorteio {
     position: relative;
     top: -4rem;
-    left: 1rem;
+    left: 2.5rem;
     color: #ddc434;
     font-style: italic;
     font-size:  medium;
