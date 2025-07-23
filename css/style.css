@@ -22,7 +22,7 @@ header {
 
 h1 {
     position: absolute;
-    top: -1.5rem;
+    top: -1rem;
     left: 1rem;
     font-size : 2rem;
     font-style: italic;
@@ -41,7 +41,7 @@ h1 {
 #linkForm {
     position: relative;
     top: 1rem;
-    left: 7.5rem;
+    left: 8rem;
     color: #ddc434;
     font-style: italic;
     font-size:  medium;
@@ -145,7 +145,7 @@ h1 , ul {
 }
 
 #opcoes-de-calculo li {
-   font-size: xx-large;
+   font-size: medium;
    list-style-type: none;
    line-height: 2rem;
 }
