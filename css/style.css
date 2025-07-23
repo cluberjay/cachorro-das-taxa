@@ -134,11 +134,11 @@ h1 , ul {
 
 #opcoes-de-calculo {
     position: absolute;
-    top: 15rem;
+    top: 18rem;
     z-index: 3;
-    max-width: 50%;
+    width: 50%;
+    max-width: 500px;
     margin: auto;
-    padding-left: 2rem;
 }
 
 #opcoes-de-calculo li {
@@ -362,7 +362,7 @@ table #celula-do-total {
 #cachorro1 {
     position:relative;
     top:1rem;
-    left: 15rem;
+    left: 16.5rem;
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
@@ -381,7 +381,7 @@ table #celula-do-total {
 #cachorro-sorteio {
     position: relative;
     top: 3.5rem;
-    left:15rem;
+    left:16.5rem;
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
@@ -392,7 +392,7 @@ table #celula-do-total {
 }
 
 #produto-do-sorteio h2 {
-    left: 1rem;
+    margin-left: 1rem;
 }
 
 #mochila {
