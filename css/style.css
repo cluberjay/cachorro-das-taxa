@@ -22,7 +22,7 @@ header {
 
 h1 {
     position: absolute;
-    top: -1rem;
+    top: 2rem;
     left: 1rem;
     font-size : 2rem;
     font-style: italic;
@@ -145,7 +145,7 @@ h1 , ul {
 }
 
 #opcoes-de-calculo li {
-   font-size: medium;
+   font-size: large;
    list-style-type: none;
    line-height: 2rem;
 }
@@ -374,7 +374,7 @@ table #celula-do-total {
 
 #cachorro-calc {
     position: relative;
-    top: 4rem;
+    top: 4.5rem;
     left: 1rem;
     width: 8rem;
     height: 8rem;
