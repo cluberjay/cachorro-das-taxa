@@ -22,7 +22,7 @@ header {
 
 h1 {
     position: absolute;
-    top: 2rem;
+    top: -2rem;
     left: 1rem;
     font-size : 2rem;
     font-style: italic;
@@ -125,7 +125,7 @@ h1 , ul {
 
 .esconde-op-de-calculos {
     position: absolute;
-    top: 25.5rem;
+    top: 20rem;
     z-index: 4;
     background-color: white;
     width: 100%;
