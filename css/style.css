@@ -7,11 +7,11 @@
 
 body {
  margin: 0;
- border-top-width: 3rem;
+ border-top-width: 2rem;
  border-top-style: solid;
  border-top-color:  #ea1d2c;
  border-top-left-radius: 15px;
- width: 100%;
+ width: 100vw;
  height: fit-content;
 }
 
@@ -22,26 +22,26 @@ header {
 
 h1 {
     position: absolute;
-    top: -2.5rem;
+    top: -1.5rem;
     left: 1rem;
-    font-size : 1.5rem;
+    font-size : 1rem;
     font-style: italic;
     color: #ffff;
 }
 
 #logo {
     position: absolute;
-    top: .5rem;
-    left: .5rem;
-    width: 8rem;
-    height: 8rem;
+    top: 1.5rem;
+    left: 1.5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
 }
 
 #linkForm {
     position: relative;
-    top: 1rem;
-    left: 8rem;
+    top: .5rem;
+    left: 11.5rem;
     color: #ddc434;
     font-style: italic;
     font-size:  medium;
@@ -57,9 +57,9 @@ h1 {
 
 #botao-menu {
     position: absolute;
-    top: .5rem;
-    right: .5rem;
-    font-size: 2.5rem;
+    top: 2.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
     border: none;
     background:none;
 }
@@ -81,7 +81,7 @@ h1 , ul {
     display: none;
     position: absolute;
     top: 0;
-    right: -80%;
+    right: -100vw;
     z-index: 5;
     width: 80%;
     height: fit-content;
@@ -100,7 +100,7 @@ h1 , ul {
     margin-left: 2rem;
     line-height: 4rem;
     list-style: none;
-}   
+}
 
 .menu-mobile li a {
     color: #000 !important;
@@ -125,7 +125,7 @@ h1 , ul {
 
 .esconde-op-de-calculos {
     position: absolute;
-    top: 20.5rem;
+    top: 25.5rem;
     z-index: 4;
     background-color: white;
     width: 100%;
@@ -134,18 +134,15 @@ h1 , ul {
 
 #opcoes-de-calculo {
     position: absolute;
-    top: 20rem;
+    top: 25rem;
     right: 25%;
     left: 25%;
-    padding-left: 2rem;
     z-index: 3;
-    width: 50%;
-    max-width: 500px;
-    margin: auto;
+    max-width: 50%;
+    padding-left: 2rem;
 }
 
 #opcoes-de-calculo li {
-   font-size: large;
    list-style-type: none;
    line-height: 2rem;
 }
@@ -312,17 +309,9 @@ table #celula-do-total {
     border-bottom-right-radius: 15px;
 }
 
-#explicacao-do-site {
-    width: 100%;
-}
-
 #cassino {
     width: 100%;
     margin-bottom: 6rem;
-}
-
-#vantagens , #calculo , #regras-do-sorteio , #produto-do-sorteio  {
-    width: 100%;
 }
 
 #cachorro-cassino {
@@ -365,8 +354,8 @@ table #celula-do-total {
 
 #cachorro1 {
     position:relative;
-    top:1rem;
-    left: 16.5rem;
+    top:2rem;
+    left: 14.5rem;
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
@@ -374,7 +363,7 @@ table #celula-do-total {
 
 #cachorro-calc {
     position: relative;
-    top: 4.5rem;
+    top: 7.5rem;
     left: 1rem;
     width: 8rem;
     height: 8rem;
@@ -384,8 +373,8 @@ table #celula-do-total {
 
 #cachorro-sorteio {
     position: relative;
-    top: 3rem;
-    left:16.5rem;
+    top: 3.5rem;
+    left:13rem;
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
@@ -393,10 +382,6 @@ table #celula-do-total {
 
 #produto-do-sorteio {
     margin-bottom: 6rem;
-}
-
-#produto-do-sorteio h2 {
-    margin-left: 1rem;
 }
 
 #mochila {
@@ -407,11 +392,10 @@ table #celula-do-total {
 }
 
 #vantagens {
-    margin-top: -1rem;   
+ margin-top: -1rem;   
 }
 
 #vantagens p {
-    margin-top: 1rem;
     margin-left: 1rem;
     font-size: 12px;
     font-weight: 500;
@@ -436,7 +420,7 @@ table #celula-do-total {
 #link-da-div-produto-do-sorteio {
     position: relative;
     top: -4rem;
-    left: 2.5rem;
+    left: 4rem;
     color: #ddc434;
     font-style: italic;
     font-size:  medium;
@@ -505,134 +489,4 @@ table #celula-do-total {
 }
 
 
-
-@media (min-width: 925px){
-
-    body {
-
-          width: 100vw;
-
-    }
-    
-    h1 {
-        top: -2rem;
-        left: 1rem;
-        font-size: 1.5rem;
-    }
-
-    .imagens {
-        position: absolute;
-        top: 1.5rem;
-        left: 1.5rem;
-        width: 20rem;
-        height: 20rem;
-        border-radius: 50%;
-        
-    }
-    
-    #botao-menu {
-        display: none;
-    }
-
-    #botao-de-fechar-calculos {
-        margin-top: -10rem;
-    }
-
-
-    #menu {
-        display: none;
-    }
-
-    .menu-mobile {
-        display: inline-flex;
-        justify-content: space-around;
-        top: -5rem;
-        right: 0;
-        background: none;
-    }
-
-    summary {
-        font-size: 1rem;
-    }
-
-   span {
-        font-size: 1rem;
-    }
-
-    .menu-mobile li,a {
-        color:#000;
-        font-size: small;
-        
-    }
-
-    details {
-        margin-top: -4px;
-    }
-
-    #tipo-de-motos {
-        position: relative;
-        top: -200px;
-    
-    }
-
-    #opcoes-de-calculo {
-        position:absolute;
-        z-index: 5;
-        display: inline-flex;
-        justify-content: space-around;
-        margin-top: -2rem;
-        margin-left: -2rem;
-        padding-left: 0;
-    }
-
-    #opcoes-de-calculo button {
-        font-size: large;
-        letter-spacing: .25rem;
-    }
-
-    #opcoes-de-calculo button:hover {
-        color:#ea1d2c;
-        cursor: pointer;
-    }
-
-    #sessao-calculos {
-        max-width: 500px;
-        margin:auto;
-        margin-top: -8rem;
-    }
-
-    #calculos input {
-        border: solid 1.5px #000;
-        border-radius: 20px;
-        margin-bottom: 1.5rem;
-        line-height: 2rem;
-        text-align: center;
-    }
-
-    #cachorro-calc {
-        top: 7.5rem;
-    }
-
-    .container-dos-custos {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        max-width: 800px;
-        width: 100%;
-        height: 40%;
-        margin: auto;
-        margin-top: 20px;
-    }
-
-    footer {
-        margin-top: 70rem;
-    }
-
-    .bi {
-        font-size: 1.5rem;
-    }
-
-    .hidden {
-        display:none !important ; 
-    }
-}
+   
