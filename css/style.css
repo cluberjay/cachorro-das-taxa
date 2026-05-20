@@ -145,6 +145,7 @@ h1 , ul {
 #opcoes-de-calculo li {
    list-style-type: none;
    line-height: 2rem;
+   font-size: large;
 }
 
 #opcoes-de-calculo button {
