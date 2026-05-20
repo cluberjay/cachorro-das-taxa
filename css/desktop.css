@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@media (min-width: 1025px){
+
+    body {
+
+          width: 100vw;
+
+    }
+    
+    h1 {
+        top: -2rem;
+        left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .imagens {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        
+    }
+    
+    #botao-menu {
+        display: none;
+    }
+
+    #botao-de-fechar-calculos {
+        margin-top: -10rem;
+    }
+
+
+    #menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: inline-flex;
+        justify-content: space-around;
+        top: -5rem;
+        right: 0;
+        background: none;
+    }
+
+    summary {
+        font-size: 1rem;
+    }
+
+   span {
+        font-size: 1rem;
+    }
+
+    .menu-mobile li,a {
+        color:#000;
+        font-size: small;
+        
+    }
+
+    details {
+        margin-top: -4px;
+    }
+
+    #tipo-de-motos {
+        position: relative;
+        top: -200px;
+    
+    }
+
+    #opcoes-de-calculo {
+        position:absolute;
+        z-index: 5;
+        display: inline-flex;
+        justify-content: space-around;
+        margin-top: -2rem;
+        margin-left: -2rem;
+        padding-left: 0;
+    }
+
+    #opcoes-de-calculo button {
+        font-size: large;
+        letter-spacing: .25rem;
+    }
+
+    #opcoes-de-calculo button:hover {
+        color:#ea1d2c;
+        cursor: pointer;
+    }
+
+    #sessao-calculos {
+        max-width: 500px;
+        margin:auto;
+        margin-top: -8rem;
+    }
+
+    #calculos input {
+        border: solid 1.5px #000;
+        border-radius: 20px;
+        margin-bottom: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    #cachorro-calc {
+        top: 7.5rem;
+    }
+
+    .container-dos-custos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 800px;
+        width: 100%;
+        height: 40%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    footer {
+        margin-top: 70rem;
+    }
+
+    .bi {
+        font-size: 1.5rem;
+    }
+
+    .hidden {
+        display:none !important ; 
+    }
+}
